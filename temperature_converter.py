@@ -17,10 +17,12 @@ if b==c:
 	print(f"temperature in faranheit={t}")
 	print(f"temperature in kelvin={m}")
 		
-if b==k:
+elif b==k:
 	print(f"temperature in celsius={n}")
 	print(f"temperature in fahrenheit={s}")
 
-if b==f:
+elif b==f:
 	print(f"temperature in celsius={x}")
-	print(f"temperature in kelvin={y}")	
+	print(f"temperature in kelvin={y}")
+else:
+	print("please give correct units")
