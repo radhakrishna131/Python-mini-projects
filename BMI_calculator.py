@@ -2,11 +2,10 @@ print("BODY MASS INDEX(BMI):")
 print("~~~~~~~~~~~~~~~~~~~~~~")
 print("                     ")
 
+weight=int(input("ENTER YOUR WEIGHT(in kg):"))
+height=int(input("ENTER YOUR HEIGHT(in cm):"))
 
-m=int(input("ENTER YOUR WEIGHT(in kg):"))
-h=int(input("ENTER YOUR HEIGHT(in cm):"))
-
-BMI=(m*10000/(h*h))
+BMI=(weight*10000/(height**2))
 
 if BMI<18.5:
     print(f"your BMI={BMI}")
@@ -22,4 +21,7 @@ elif BMI>24.9 and BMI<=29.9:
     
 elif BMI>30:
     print(f"your BMI={BMI}")
-    print("obesity")           
+    print("obesity")
+
+else:
+    print("please Enter valid details")
